@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 
-let vez = 0
 async function x() {
     for (let index = 0; index < 1500; index++) {
 
@@ -15,8 +14,7 @@ async function x() {
         await page.keyboard.press('Enter');
         await delay(2000);
         await browser.close();
-        vez++
-        console.log('Votei ' + vez + ' ...');
+        console.log('Votei ' + index + ' ...');
 
 
     }
